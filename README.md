@@ -41,5 +41,21 @@ and replace all the terms ¨focal¨ with ¨groovy¨. Make sure to replace all of
 
 17. Use the following command to install sagemath:
 	sudo apt-get install  bc binutils bzip2 ca-certificates cliquer cmake curl ecl eclib-tools fflas-ffpack flintqs g++ g++ gcc gcc gfan gfortran glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev libbraiding-dev libbrial-dev libbrial-groebner-dev libbz2-dev libcdd-dev libcdd-tools libcliquer-dev libcurl4-openssl-dev libec-dev libecm-dev libffi-dev libflint-arb-dev libflint-dev libfreetype6-dev libgc-dev libgd-dev libgf2x-dev libgiac-dev libgivaro-dev libglpk-dev libgmp-dev libgsl-dev libhomfly-dev libiml-dev liblfunction-dev liblrcalc-dev liblzma-dev libm4rie-dev libmpc-dev libmpfi-dev libmpfr-dev libncurses5-dev libntl-dev libopenblas-dev libpari-dev libpcre3-dev libplanarity-dev libppl-dev libpython3-dev libreadline-dev librw-dev libsqlite3-dev libssl-dev libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev libzn-poly-dev m4 make nauty openssl palp pari-doc pari-elldata pari-galdata pari-galpol pari-gp2c pari-seadata patch perl pkg-config planarity ppl-dev python3 python3 python3-distutils r-base-dev r-cran-lattice sqlite3 sympow tachyon tar tox xcas xz-utils yasm
-
+18. Install prerequisits using the following command: 
+	sudo apt install dvipng texlive ffmpeg imagemagick openssh-server openssh-client tk tk-dev
+19. Use following command to download source code to folder called sage in your current dir(check the seagemath download page if you want to download a different release):
+	mkdir sage
+	cd sage
+	wget http://www.mirrorservice.org/sites/www.sagemath.org/linux/64bit/sage-9.4-Ubuntu_20.04-x86_64.tar.bz2
+20. Extract the .tar file using following command:
+	tar xvf sage-9.4-Ubuntu_20.04-x86_64.tar.bz2
+21. After the extraction use:
+	cd SageMath
+22. Now use the following command to run the make file. The number 6 in the number jobs to run parallely.
+	sudo apt-get install python-is-python3
+	sudo make -j6
+23. Now sage is installed on your machine. Use following command to enter sage and test it:
+	./sage
+24. Use following command to exit sage and continue with post installation process.
+	exit
 	
