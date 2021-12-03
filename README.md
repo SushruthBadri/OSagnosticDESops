@@ -56,6 +56,10 @@ and replace all the terms ¨focal¨ with ¨groovy¨. Make sure to replace all of
 	sudo make -j6
 23. Now sage is installed on your machine. Use following command to enter sage and test it:
 	./sage
-24. Use following command to exit sage and continue with post installation process.
+24. Use following command to exit sage.
 	exit
-	
+Using jupyter notebook with sage
+25. Enter the following command:
+	./sage -i pyopenssl
+26. To launch jupyter notebook use the following command:
+	./sage -n jupyter	
